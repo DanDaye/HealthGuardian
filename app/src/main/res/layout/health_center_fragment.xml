@@ -18,6 +18,7 @@
         android:background="@color/themeColor"
         android:elevation="5dp"
         android:clickable="true"
+        app:cardUseCompatPadding="true"
         android:foreground="?attr/selectableItemBackground"
         android:layout_weight="0.08">
 
@@ -43,6 +44,7 @@
         app:cardBackgroundColor="@color/cardBackground"
         android:elevation="5dp"
         android:clickable="true"
+        app:cardUseCompatPadding="true"
         android:foreground="?attr/selectableItemBackground"
         android:layout_weight="0.41">
 
@@ -52,6 +54,7 @@
             android:orientation="vertical"
             >
             <TextView
+                android:id="@+id/heart_state_tv"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:text="心率 : 正常"
@@ -82,11 +85,12 @@
                     />
 
                 <TextView
+                    android:id="@+id/heart_rate_tv"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="85"
+                    android:text="检测中"
                     android:textColor="@color/cardText"
-                    android:textSize="80sp"
+                    android:textSize="70sp"
                     android:layout_weight="3"
                     android:gravity="center"
                     />
@@ -108,6 +112,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
         android:clickable="true"
         android:foreground="?attr/selectableItemBackground"
         android:layout_weight="0.41">
@@ -118,6 +123,7 @@
             android:orientation="vertical"
             >
             <TextView
+                android:id="@+id/blood_state_tv"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:text="血压 : 正常"
@@ -148,14 +154,14 @@
                     />
 
                 <TextView
+                    android:id="@+id/blood_pressure_tv"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="92"
-                    android:textColor="@color/cardText"
-                    android:textSize="80sp"
                     android:layout_weight="3"
                     android:gravity="center"
-                    android:id="@+id/textView" />
+                    android:text="检测中"
+                    android:textColor="@color/cardText"
+                    android:textSize="60sp" />
 
 
             </LinearLayout>

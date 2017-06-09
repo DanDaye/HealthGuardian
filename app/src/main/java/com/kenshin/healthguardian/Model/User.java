@@ -5,6 +5,8 @@ package com.kenshin.healthguardian.Model;
  */
 
 public class User {
+    public static String me;
+    public static String bindID;
     private String userName;
     private String userID;
 
